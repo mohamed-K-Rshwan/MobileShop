@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:label="Mobile Shop"
+        android:icon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileShop">
+
+        <!-- واجهة البداية -->
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- واجهات عادية -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AdminCategoriesActivity" />
+        <activity android:name=".AddCategoryActivity" />
+        <activity android:name=".AdminProductsActivity" />
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".CustomerHomeActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".PurchasedProductsActivity" />
+        <activity android:name=".ShowPathActivity" />
+        <activity android:name=".SearchProductsActivity" />
+        <activity android:name=".EditCategoryActivity" />
+        <activity android:name=".EditProductActivity" />
+
+    </application>
+
+
+
+</manifest>
